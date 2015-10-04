@@ -1,0 +1,42 @@
+body
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	cursor: default;
+	width: 70%;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1
+{
+	font-size: 1.4em;
+	color: #fb8900;
+	text-transform: capitalize;
+	margin-bottom: 8px;
+}
+h2
+{
+	font-size: 1.2em;
+	color: #69a31e;
+	text-transform: capitalize;
+	margin-bottom: 8px;
+	margin-left: 4px;
+}
+p
+{
+	margin-left: 16px;
+	margin-top: 4px;
+}
+b
+{
+	color: #3c3c60;
+}
+ul
+{
+	list-style-type: square;
+}
+a
+{
+	color: royalblue;
+}

@@ -1,0 +1,61 @@
+#include "Resource.h"
+#include "Analyzer.h"
+
+#include <windows.h>
+
+// Audio Analyzer dynamic version info
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION ANALYZER_VERSION_MAJOR,ANALYZER_VERSION_MINOR,0,0
+ PRODUCTVERSION ANALYZER_VERSION_MAJOR,ANALYZER_VERSION_MINOR,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041a04b0"
+        BEGIN
+            VALUE "CompanyName", "Marko Mihovilic"
+            VALUE "FileDescription", "Audio Analyzer"
+			VALUE "FileVersion", TOSTRINGA(ANALYZER_VERSION_MAJOR) "," TOSTRINGA(ANALYZER_VERSION_MINOR) ", 0, 0"
+            VALUE "InternalName", "AudioAnalyzer"
+            VALUE "LegalCopyright", "Copyright (C) Marko Mihovilic 2010. All Rights Reserved."
+            VALUE "OriginalFilename", "AudioAnalyzer.exe"
+            VALUE "ProductName", "Audio Analyzer"
+            VALUE "ProductVersion", TOSTRINGA(ANALYZER_VERSION_MAJOR) "," TOSTRINGA(ANALYZER_VERSION_MINOR) ", 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x41a, 1200
+    END
+END
+
+// Icon
+IDI_MAIN_ICON           ICON                    "Icon.ico"
+
+// Fonts
+IDR_FONT_UI             RT_FONT                 "UI.fdt"
+IDR_FONT_BOLD           RT_FONT                 "Bold.fdt"
+IDR_FONT_LARGE_BOLD		RT_FONT					"LargeBold.fdt"
+
+// Textures
+IDR_TEXTURE_CURSOR				RT_TEXTURE		"CursorNormal.tga"
+
+IDR_TEXTURE_DAIL_BACKGROUND     RT_TEXTURE		"DailBackground2.tga"
+IDR_TEXTURE_DAIL_FOREGROUND     RT_TEXTURE		"DailForeground2.tga"
+
+IDR_TEXTURE_BAR_BACKGROUND		RT_TEXTURE		"BarBackground2.tga"
+IDR_TEXTURE_BAR_FOREGROUND		RT_TEXTURE		"BarForeground2.tga"
+
+IDR_TEXTURE_LAZY_BACKGROUND		RT_TEXTURE		"BarBackground.tga"
+IDR_TEXTURE_LAZY_FOREGROUND		RT_TEXTURE		"BarForeground.tga"
+
+IDR_TEXTURE_BEAT_FOREGROUND		RT_TEXTURE		"BeatForeground.tga"
+IDR_TEXTURE_BEAT_BACKGROUND		RT_TEXTURE		"BeatBackground.tga"

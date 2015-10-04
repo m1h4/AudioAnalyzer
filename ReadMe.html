@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+	<head>
+		<title>Audio Analyzer</title>
+		<link rel="stylesheet" type="text/css" href="Style.css"/>
+	</head>
+	<body>
+			<h1>Audio Analyzer by Marko Mihovilic</h1>
+			<h2>Overview:</h2>
+			<p>Audio Analyzer is a audio analyzation and 
+				visualization application. It captures audio data using Direct Sound and 
+				displays the captured and processed data to the user using Direct 3D. It's 
+				built to capture audio data from the default recording device so you can use it 
+				with any audio player application, you just set the defaut recording devce to 
+				record from the stereo mixer and play your music!</p>
+			<h2>Requirements:</h2>
+			<p>Audio Analyzer requires the folowing hardware/software:
+				<ul>
+					<li>A medium-range processor with a speed of at least 1.0 Ghz</li>
+					<li>A Microsoft Windows 2000/XP operating system</li>
+					<li>A DirectX compatible sound card</li>
+					<li><b>DirectX 9.0c</b> or newer to be installed</li>
+					<li>It is recommended that your desktop display mode be set to at least <b>800x600 16-bit</b></li>
+				</ul>
+			</p>
+			<h2>Controls:</h2>
+			<p>Press F1 in Audio Analyzer to display the controls, F12 to see the about screen.</p>
+			<h2>How to set the default recording device:</h2>
+			<p>
+                        Enter the Audio Anaylzer menu and select <em>Capture Source</em>, now select the
+                        desired source of audio capture.
+                <br/>
+                <br/>
+                    Note: If you have a <em>No Signal</em> message flashing in the upper-left corner
+                    and/or there is no activity in the visualizations but you have sound playing on your system, it probably means that your recording
+                    source is se to the wrong device. Usualy the <em>Stereo Mixer</em> (might be named diferently) is what you want.</p>
+			<h2>How to make your own color presets:</h2>
+			<p>The file <b>Presets.ini</b> contains the color preset 
+				definitions. This file will be automaticly loaded when Audio Analyzer starts. 
+				To add a new color preset, open the file in notepad or a nother text editor. To define a new color preset add a preset 
+                section that looks something like this: <b>[<em>Name 
+						of your preset]</em></b>. Now, the preset 
+				color&nbsp;definitions go below the section declaration. A color definition looks like 
+				this <b><em>Id of color</em>=<em>Color value</em></b>. The available color id-s:<br/>
+				<br/>
+				<b>Peak</b> - Peak color<br/>
+				<b>Text1</b> - Normal text color<br/>
+				<b>Text2</b> - Bright text color<br/>
+				<b>Text3</b> - Dark text color<br/>
+				<b>Background</b> - Global background color<br/>
+				<b>BackgroundTopLeft</b> - Top left corner of the background plane<br/>
+				<b>BackgroundTopRight</b> - Top right corner of the background plane<br/>
+				<b>BackgroundBottomLeft</b> - Bottom left corner of the background 
+				plane<br/>
+				<b>BackgroundBottomRight</b> - Bottom right corner of the background 
+				plane<br/>
+				<b>BackgroundTop</b> - Sets both the top left and top right<br/>
+				<b>BackgroundBottom</b> - Sets both the bottom left and bottom right<br/>
+				<b>BackgroundRight</b> - Sets both the top right and bottom right<br/>
+				<b>BackgroundLeft</b> - Sets both the top left and bottom left<br/>
+				<br/>
+				If you don't specify a color the <em>Default</em> preset's color will be used. The 
+				colors are in ARGB format, ranging from 0.0 to 1.0. If you don't specify the 
+				alpha, 1.0 will be used. If you only specify the Text1 color, Text2 and Text1 
+				will be generated automaticaly from Text1. The text 
+				shadow's color is the negative value of the Background color. So if the 
+				background color is white, the text shadow color will be black and similar.
+				<br/>
+				<br/>
+				Info: Color preset names and id's are case-insensitive<br/>
+				<br/>
+				Note: You can use the provided color presets as templates.
+			</p>
+			<h2>Copyright:</h2>
+			<p>
+				Copyright Miha Software 2010. All Rights Reserved 2010. For updates visit the <a href="http://free-kr.t-com.hr/mihasoftware/">
+					Miha Software Home Page</a>.</p>
+	</body>
+</html>
